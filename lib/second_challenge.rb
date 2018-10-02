@@ -9,5 +9,6 @@ def second_challenge
   
   array_of_types = groceries.values
   
+  array_of_types.flatten
 
 end
