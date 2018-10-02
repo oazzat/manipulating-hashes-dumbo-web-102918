@@ -13,9 +13,9 @@ def first_challenge
     }
   }
 
-  contacts.each do |name,data|
+  contacts.collect do |name,data|
     if name == "Freddy Mercury"
-      "Freddy Mercury".each do |detail, val|
+      "Freddy Mercury".collect do |detail, val|
         if detail == :favorite_icecream_flavors
           val.delete("strawberry")
         end
